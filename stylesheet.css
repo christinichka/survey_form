@@ -1,0 +1,94 @@
+html,
+body {
+  background-color: #FFE4E1;
+  text-align: center;
+  font-family: 'Coiny', cursive;
+  min-width: 300px;
+}
+
+header {
+  font-size: 1.25em;
+  margin:15px;
+  font-family: 'Coiny', cursive;
+}
+
+#form-outer {
+  background-color: #F0FFFF;
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  max-width: 900px;
+  padding: 5px;
+  padding-top: 20px;
+}
+
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+
+.input-field {
+  height: 10px;
+  width: 200px;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+#userAge {
+  width: 40px;
+}
+
+.userRatings, input[type="checkbox, radio"] {
+  float: left;
+  margin-right: 5px;
+}
+
+#submit {
+  background-color: #90EE90;
+  border-radius: 15px;
+  color: #000000;
+  font-size: 1em;
+  height: 60px;
+  width: 120px;
+  margin: 10px;
+}
+
+.dropdown {
+  height: 45px;
+  width: 140px;
+  padding: 5px;
+  margin: 15px;
+  margin-top: 25px;
+  border: 1px solid;
+  border-radius: 5px;
+}
+
+.radio {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
