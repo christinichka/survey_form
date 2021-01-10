@@ -1,0 +1,137 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<header> <link href="https://fonts.googleapis.com/css?family=Coiny|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+<!--User Story #1-->
+<h1 id="title">Survey Form</h1>
+
+<!--User Story #2-->
+<div id="form-outer">
+  <p id="description">
+    Let us know what you think of this survey form. 
+  </p>
+<!--User Story #3-->
+  
+ <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
+
+<!--User Story #4-->
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+     </div>
+
+<!--User Story #5-->   
+ <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+   <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+
+<!--User Story #6 If I enter an email that is not formatted correctly, I will see an HTML5 validation error.-->
+
+<!--User Story #7-->
+<div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+   
+<!--User Story #8 If I enter non-numbers in the number input, I will see an HTML5 validation error.-->
+
+<!--User Story #9 If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.-->
+
+<!--User Story #10  For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".-->
+
+<!--User Story #11  For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.-->
+
+<!--User Story #12 Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".-->
+   <div class="rowTab">
+      <div class="labels">
+        <label for="currentPos">What is your current employment status</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="student">Student</option>
+      <option value="job">Full-Time Job</option>
+      <option value="learner">Part-Time Learner</option>
+      <option value="preferNo">Student</option>
+      <option value="other">Other</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+
+<!--User Story #13 Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.-->
+
+<div class="rowTab">
+  <div class="labels">
+    <label for ="userRating"> How likely are you to change careers?</label>
+  </div>
+  <div class="rightTab">
+    <ul style="list-style: none;">
+   <li class="radio">
+   <label>Definitely<input name="radio-buttons" 
+value="1" type="radio"
+class="userRatings">
+     </label></li>
+      
+<li class="radio">
+  <label>Maybe<input name="radio-buttons"
+value="2" type="radio" class="userRatings">
+    </label></li>
+      
+<li class="radio">
+  <label>Not Sure<input name="radio-buttons"
+value="3" type="radio" class="userRatings">
+    </label></li>
+      
+    </ul>
+  </div>
+        </div>
+<!--User Story #14 Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.-->
+<div class="rowTab">
+  <div class="labels">
+    <label for="preferences">What ice cream flavor do your prefer? <br>(Check all that apply):</label>
+  </div>
+           <div class="rightTab">
+             <ul
+     id="preferences" style="list-style: none;">
+            <li   class="checkbox"><label>
+      <input name="prefer" value="1" type="checkbox"
+class="userRatings">Mint Chip</label></li>
+               <li
+class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRating">Vanilla</li>
+               <li
+class="checkbox"><input name="prefer" value="3" type="checkbox" class="userRating">Swirl</li>
+                
+               </div>
+<!--User Story #15 Inside the form element, I am presented with a text area at the end for additional comments.-->
+  <div class="rowTab">
+  <div class="labels">
+    <label for="comments">Any Comments or Suggestions?
+      </label>
+    </div>
+    
+  <div class="rightTab">
+    <textarea id="comments"
+  class="input-field"
+  style="height:60px;resize: vertical;" name="comment" placeholder="Enter your comments here...">
+      </textarea>
+    </div>
+  </div>
+<!--User Story #16 Inside the form element, I am presented with a button with id="submit" to submit all my inputs.-->
+<div class="rightTab">
+  <button id="submit"
+  type="submit">Submit</button>
+        </form>
+   </div>
